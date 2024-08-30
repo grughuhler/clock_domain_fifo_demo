@@ -1,0 +1,25 @@
+This directory contains a version of the "bad" clock domain crossing.
+It uses a narrower count in order to see the failures with shorter
+runs when using iverilog (rather than a Gowin FPGA) to run.
+
+To try this on Linux (e.g. Ubuntu 22.04) you must install iverilog
+and gtkwave thus:
+
+  sudo apt install iverilog gtwave
+
+I don't know about Windows.
+
+Then "make" will build and simulate the verilog creating file waveform.vcd
+which can be viewed by
+
+  gtkwave waveform.vcd
+
+to view the signals.  Use these steps in gtkwave:
+
+1.  Click on tb_bad on the left.
+2.  Then, right click on it and select recurse import/append and
+    append all signals.
+3.  Click on the zoom out icon many times until you see signals
+    changing
+4.  Scroll right and left and view the signals.
+

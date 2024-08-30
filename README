@@ -1,0 +1,12 @@
+This directory contains a project for the Tang Nano 9K FPGA
+development board that shows both a very bad and a good design for
+passing data from one clock domain to another.
+
+The good design uses the Gowin FIFO soft IP block.
+
+You can use the Gowin to IDE to enable either the good or bad design
+file.
+
+When working, the Tang Nano 9K LEDs blink in a counting pattern.
+
+Build and run with the Gowin IDE.
